@@ -40,9 +40,9 @@
           <div class="main-nav d-none d-lg-block">
             <nav class="site-navigation text-right text-md-center" role="navigation">
               <ul class="site-menu js-clone-nav d-none d-lg-block">
-                <li><a href="#">About</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Contact</a></li>
+                <li class="tab-link" onclick="openTab(event, 'tab1')"><a href="#">About</a></li>
+                <li class="tab-link" onclick="openTab(event, 'tab2')"><a href="#">Services</a></li>
+                <li class="tab-link" onclick="openTab(event, 'tab3')"><a href="#">Contact</a></li>
               </ul>
             </nav>
           </div>
@@ -91,78 +91,156 @@
 
 
 
-    <div class="site-section py-5">
+    <div class="site-section py-5 tab-content" id="tab1" style="display:block;">
       <div class="container">
         <div class="row">
-          <div class="col-lg-4">
+          <div class="col-lg-12">
             <div class="feature">
-              <span class="wrap-icon flaticon-24-hours-drugs-delivery"></span>
-              <h3><a href="#">Free Delivery</a></h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa laborum voluptates excepturi neque labore .</p>
-              <p><a href="#" class="d-flex align-items-center"><span class="mr-2">Learn more</span> <span class="icon-keyboard_arrow_right"></span></a></p>
-            </div>
+              <div style="text-align: center;">
+                <span style="display: inline-block;" class="wrap-icon flaticon-24-hours-drugs-delivery"></span>
+                <h3><a href="#">About Us</a></h3>
+              </div>
+              <p>TrustReg Pharma Co., Ltd. is a professional pharmaceutical regulatory and business support company based in Myanmar, providing comprehensive, end-to-end solutions for pharmaceutical manufacturers, importers, and healthcare businesses.
+                We specialize in supporting both international and local partners with regulatory affairs, product registration, documentation compliance, and market entry strategy, ensuring smooth, transparent, and fully compliant operations in Myanmar, across Asia, and worldwide markets.
+                With strong technical expertise and practical experience in pharmaceutical regulatory systems, our team is committed to delivering services that are precise, reliable, and aligned with international regulatory standards.
+                Our mission is to simplify complex regulatory frameworks and support pharmaceutical companies in successfully bringing safe, effective, and high-quality healthcare products to global markets.
+                </p>
+              </div>
           </div>
-          <div class="col-lg-4">
+        </div>
+        <div class="row">
+          <div class="col-lg-6">
             <div class="feature">
-              <span class="wrap-icon flaticon-medicine"></span>
-              <h3><a href="#">New Medicine Everyday</a></h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa laborum voluptates excepturi neque labore .</p>
-              <p><a href="#" class="d-flex align-items-center"><span class="mr-2">Learn more</span> <span class="icon-keyboard_arrow_right"></span></a></p>
-            </div>
+              <div style="text-align: center;">
+                <span style="display: inline-block;" class="wrap-icon flaticon-medicine"></span>
+                <h3><a href="#">Our MISSION</a></h3>
+              </div>
+              <p>To provide high-quality, reliable, and fully compliant pharmaceutical regulatory services that support global healthcare access and sustainable business growth.</p>
+             </div>
           </div>
-          <div class="col-lg-4">
+          <div class="col-lg-6">
             <div class="feature">
-              <span class="wrap-icon flaticon-test-tubes"></span>
-              <h3><a href="#">Medicines Guaranteed</a></h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa laborum voluptates excepturi neque labore .</p>
-              <p><a href="#" class="d-flex align-items-center"><span class="mr-2">Learn more</span> <span class="icon-keyboard_arrow_right"></span></a></p>
-            </div>
+              <div style="text-align: center;">
+                <span style="display: inline-block;" class="wrap-icon flaticon-test-tubes"></span>
+                <h3><a href="#">Our VISSION</a></h3>
+              </div>
+              <p>To become a trusted global partner in pharmaceutical regulatory affairs and healthcare business solutions, recognized across Asia and worldwide for excellence, integrity, and regulatory expertise.</p>
+             </div>
           </div>
         </div>
       </div>
+      <footer class="site-footer bg-light">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 col-lg-4 mb-4 mb-lg-0">
+  
+              <div class="block-7">
+                <h3 class="footer-heading mb-4">About <strong class="text-primary">TrustReg Pharma</strong></h3>
+                <p>TrustReg Pharma Co., Ltd. is a professional pharmaceutical regulatory and business support company based in Myanmar, providing comprehensive, end-to-end solutions for pharmaceutical manufacturers, importers, and healthcare businesses.</p>
+              </div>
+  
+            </div>
+            <div class="col-lg-3 mx-auto mb-5 mb-lg-0">
+              <h3 class="footer-heading mb-4">Navigation</h3>
+              <ul class="list-unstyled">
+                  <li><a href="#">About</a></li>
+                  <li><a href="#">Services</a></li>
+                  <li><a href="#">Contact</a></li>
+              </ul>
+            </div>
+  
+            <div class="col-md-6 col-lg-3">
+              <div class="block-5 mb-5">
+                <h3 class="footer-heading mb-4">Contact Info</h3>
+                <ul class="list-unstyled">
+                  <li class="address">Yangon, Myanmar</li>
+                  <li class="phone"><a href="tel://959250153122">+95 9 250 153 122</a><br><a href="tel://959787575629">+95 9 787 575 629</a><br><a href="tel://6591339890">+65 9 133 9890</a></li>
+                  <li class="email">trustregpharma@gmail.com</li>
+                </ul>
+              </div>
+  
+  
+            </div>
+          </div>
+          <div class="row pt-5 mt-5 text-center">
+            <div class="col-md-12">
+              <p>
+                Copyright &copy;
+                <script>document.write(new Date().getFullYear());</script> All rights Reserved
+              </p>
+            </div>  
+          </div>
+        </div>
+      </footer>
     </div>
     
     
-    <div class="site-section bg-light">
+    <div class="site-section bg-light tab-content" id="tab2" style="display:none;">
       <div class="container">
         <div class="row">
           <div class="title-section text-center col-12">
-            <h2>Pharmacy <strong class="text-primary">Products</strong></h2>
+            <h2>OUR SERVICES</h2>
+            <h6>We offer a complete range of pharmaceutical regulatory and business support services, including:</h6>
           </div>
         </div>
         <div class="row">
-          <div class="col-md-12 block-3 products-wrap">
-            <div class="nonloop-block-3 owl-carousel">
+          <section class="services-section">
+    
+            <div class="services-grid">
+                
+                <div class="service-card">
+                  <h3>Regulatory Affairs Services</h3>
+                  <ul>
+                    <li><span>Product registration (FDA submission support) for pharmaceuticals, nutraceuticals, health supplements, and medical devices</span></li>
+                    <li><span>Technical dossier preparation and scientific document review</span></li>
+                    <li><span>Labeling, packaging, and artwork compliance in accordance with regulatory requirements</span></li>
+                    <li><span>Product variation, renewal, and lifecycle management applications</span></li>
+                  </ul>
+                </div>
+    
+                <div class="service-card">
+                  <h3>Import & Distribution Support</h3>
+                  <ul>
+                    <li><span>Import documentation and regulatory clearance assistance</span></li>
+                    <li><span>Local compliance advisory and regulatory interpretation</span></li>
+                    <li><span>Market entry strategy and execution support in Myanmar and regional markets</span></li>
+                  </ul>
+                </div>
+                
+                <div class="service-card">
+                  <h3>Business Development Support</h3>
+                  <ul>
+                    <li><span>Strategic partner identification and global networking support</span></li>
+                    <li><span>Market research, feasibility analysis, and regulatory intelligence</span></li>
+                    <li><span>Product launch planning and commercialization support</span></li>
+                  </ul>
+                </div>
 
-              <div class="text-center item mb-4 item-v2">
-                <span class="onsale">Sale</span>
-                <a href="shop-single.html"> <img src="images/product_03.png" alt="Image"></a>
-                <h3 class="text-dark"><a href="shop-single.html">Umcka Cold Care</a></h3>
-                <p class="price">$120.00</p>
-              </div>
+                <div class="service-card">
+                  <h3>Documentation & Compliance Services</h3>
+                  <ul>
+                    <li><span>Preparation of complete technical and regulatory documentation packages</span></li>
+                    <li><span>Regulatory guideline consultation and interpretation</span></li>
+                    <li><span>Quality compliance advisory and submission readiness support</span></li>
+                  </ul>
+                </div>
 
-              <div class="text-center item mb-4 item-v2">
-                <a href="shop-single.html"> <img src="images/product_01.png" alt="Image"></a>
-                <h3 class="text-dark"><a href="shop-single.html">Umcka Cold Care</a></h3>
-                <p class="price">$120.00</p>
-              </div>
+                <div class="service-card">
+                  <h3>WHY CHOOSE US</h3>
+                  <ul>
+                    <li><span>In-depth expertise in Myanmar FDA regulatory framework</span></li>
+                    <li><span>Strong understanding of Asian and international regulatory requirements</span></li>
+                    <li><span>Fast, accurate, and compliant documentation services</span></li>
+                    <li><span>Strong communication and client-focused coordination</span></li>
+                    <li><span>Pharmaceutical industry experience with regulatory insight</span></li>
+                    <li><span>Commitment to integrity, quality, and global compliance standards</span></li>
+                  </ul>
+                  <p>We serve as a strategic bridge between international pharmaceutical companies and regulatory authorities in Myanmar, Asia, and worldwide markets, ensuring smooth and compliant global market access.</p>
+                </div>
 
-              <div class="text-center item mb-4 item-v2">
-                <span class="onsale">Sale</span>
-                <a href="shop-single.html"> <img src="images/product_02.png" alt="Image"></a>
-                <h3 class="text-dark"><a href="shop-single.html">Umcka Cold Care</a></h3>
-                <p class="price">$120.00</p>
-              </div>
-
-              <div class="text-center item mb-4 item-v2">
-                <a href="shop-single.html"> <img src="images/product_04.png" alt="Image"></a>
-                <h3 class="text-dark"><a href="shop-single.html">Umcka Cold Care</a></h3>
-                <p class="price">$120.00</p>
-              </div>
 
             </div>
-          </div>
-        </div>
+        </section>
       </div>
     </div>
 
@@ -174,8 +252,7 @@
 
             <div class="block-7">
               <h3 class="footer-heading mb-4">About <strong class="text-primary">TrustReg Pharma</strong></h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius quae reiciendis distinctio voluptates
-                sed dolorum excepturi iure eaque, aut unde.</p>
+              <p>TrustReg Pharma Co., Ltd. is a professional pharmaceutical regulatory and business support company based in Myanmar, providing comprehensive, end-to-end solutions for pharmaceutical manufacturers, importers, and healthcare businesses.</p>
             </div>
 
           </div>
@@ -192,9 +269,109 @@
             <div class="block-5 mb-5">
               <h3 class="footer-heading mb-4">Contact Info</h3>
               <ul class="list-unstyled">
-                <li class="address">350, Thazin (2) street, <br/>(L) block, North Okkalapa, Yangon, Myanmar</li>
-                <li class="phone"><a href="tel://959250153122">+95 9 250153122</a></li>
-                <li class="email">maythucho@gmail.com</li>
+                <li class="address">Yangon, Myanmar</li>
+                <li class="phone"><a href="tel://959250153122">+95 9 250 153 122</a><br><a href="tel://959787575629">+95 9 787 575 629</a><br><a href="tel://6591339890">+65 9 133 9890</a></li>
+                <li class="email">trustregpharma@gmail.com</li>
+              </ul>
+            </div>
+
+
+          </div>
+        </div>
+        <div class="row pt-5 mt-5 text-center">
+          <div class="col-md-12">
+            <p>
+              Copyright &copy;
+              <script>document.write(new Date().getFullYear());</script> All rights Reserved
+            </p>
+          </div>  
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <div class="site-section py-5 tab-content" id="tab3" style="display:none;">
+    <div class="container">
+      <div class="contact-container">
+        <!-- Left Column: Company Information -->
+        <div class="contact-info">
+            <div>
+                <h2>Contact Us</h2>
+                <p>If you are looking for a trusted regulatory and business partner in Myanmar and beyond, we are here to support you.</p>
+                
+                <div class="info-details">
+                    <div class="info-item">
+                        <span class="icon">TrustReg Pharma Co., Ltd.</span>
+                        <span>Myanmar</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="icon">📞</span>
+                        <span><a href="tel:+15551234567">+95 9 250 153 122, +95 9 787 575 629, +6591339890</a></span>
+                    </div>
+                    <div class="info-item">
+                        <span class="icon">✉️</span>
+                        <span><a href="mailto:support@example.com">trustregpharma@gmail.com</a></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Right Column: Interactive Feedback Form -->
+        <div class="contact-form-wrapper">
+            <h3>Send us a Message</h3>
+            <form action="#" method="POST">
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" placeholder="John Doe" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" placeholder="john@example.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" name="subject" placeholder="How can we help you?" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" placeholder="Type your message here..." required></textarea>
+                </div>
+                
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+        </div>
+    </div>
+    </div>
+    <footer class="site-footer bg-light">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-lg-4 mb-4 mb-lg-0">
+
+            <div class="block-7">
+              <h3 class="footer-heading mb-4">About <strong class="text-primary">TrustReg Pharma</strong></h3>
+              <p>TrustReg Pharma Co., Ltd. is a professional pharmaceutical regulatory and business support company based in Myanmar, providing comprehensive, end-to-end solutions for pharmaceutical manufacturers, importers, and healthcare businesses.</p>
+            </div>
+
+          </div>
+          <div class="col-lg-3 mx-auto mb-5 mb-lg-0">
+            <h3 class="footer-heading mb-4">Navigation</h3>
+            <ul class="list-unstyled">
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="col-md-6 col-lg-3">
+            <div class="block-5 mb-5">
+              <h3 class="footer-heading mb-4">Contact Info</h3>
+              <ul class="list-unstyled">
+                <li class="address">Yangon, Myanmar</li>
+                <li class="phone"><a href="tel://959250153122">+95 9 250 153 122</a><br><a href="tel://959787575629">+95 9 787 575 629</a><br><a href="tel://6591339890">+65 9 133 9890</a></li>
+                <li class="email">trustregpharma@gmail.com</li>
               </ul>
             </div>
 
@@ -222,6 +399,26 @@
   <script src="js/aos.js"></script>
 
   <script src="js/main.js"></script>
+  <script>
+    function openTab(evt, tabId) {
+  // 1. Hide all tab content divs
+  const contents = document.getElementsByClassName("tab-content");
+  for (let i = 0; i < contents.length; i++) {
+    contents[i].style.display = "none";
+  }
+
+  // 2. Remove the "active" class from all buttons
+  const links = document.getElementsByClassName("tab-link");
+  for (let i = 0; i < links.length; i++) {
+    links[i].className = links[i].className.replace(" active", "");
+  }
+
+  // 3. Show the specific tab and add an active class to the button
+  document.getElementById(tabId).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+  </script>
 
 </body>
 

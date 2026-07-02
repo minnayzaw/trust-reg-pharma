@@ -495,11 +495,11 @@ a {
   background-position: center center;
   position: relative; }
   .site-blocks-cover, .site-blocks-cover > .container > .row {
-    min-height: 700px;
-    height: calc(80vh); }
+    min-height: 200px;
+    height: calc(20vh); }
   .site-blocks-cover.inner-page, .site-blocks-cover.inner-page .row {
     min-height: 400px;
-    height: 700px; }
+    height: 400px; }
   .site-blocks-cover h2 {
     font-size: 14px;
     font-weight: normal;
@@ -1260,3 +1260,135 @@ a {
   .btn-outline-white:hover {
     color: #75b239;
     background: #fff; }
+
+
+    /* Side Block: Company Info */
+    .contact-info {
+      background: #023047; /* Primary deep blue palette */
+      color: #ffffff;
+      padding: 40px;
+      flex: 1 1 400px; /* Flex-grow, shrink, and base width */
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+  }
+
+  .contact-info h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+  }
+
+  .contact-info p {
+      color: #e0e0e0;
+      font-size: 0.95rem;
+      line-height: 1.6;
+      margin-bottom: 30px;
+  }
+
+  .info-details .info-item {
+      display: flex;
+      align-items: center;
+      margin-bottom: 25px;
+  }
+
+  .info-item .icon {
+      font-size: 1.5rem;
+      margin-right: 15px;
+      color: #219ebc; /* Accent color */
+  }
+
+  .info-item a {
+      color: #ffffff;
+      text-decoration: none;
+      transition: color 0.3s;
+  }
+
+  .info-item a:hover {
+      color: #219ebc;
+  }
+
+  /* Side Block: Interactive Form */
+  .contact-form-wrapper {
+      padding: 40px;
+      flex: 1 1 500px;
+  }
+
+  .contact-form-wrapper h3 {
+      font-size: 1.8rem;
+      color: #023047;
+      margin-bottom: 30px;
+  }
+
+  .form-group {
+      margin-bottom: 20px;
+  }
+
+  .form-group label {
+      display: block;
+      font-size: 0.9rem;
+      font-weight: 600;
+      margin-bottom: 8px;
+      color: #555;
+  }
+
+  .form-group input,
+  .form-group textarea {
+      width: 100%;
+      padding: 12px 15px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 1rem;
+      outline: none;
+      transition: border-color 0.3s, box-shadow 0.3s;
+  }
+
+  /* Input field behaviors on focus */
+  .form-group input:focus,
+  .form-group textarea:focus {
+      border-color: #023047;
+      box-shadow: 0 0 5px rgba(2, 48, 71, 0.3);
+  }
+
+  .form-group textarea {
+      resize: vertical;
+      min-height: 120px;
+  }
+
+  /* Submit Button Styling */
+  .submit-btn {
+      background: #023047;
+      color: #ffffff;
+      border: none;
+      padding: 14px 28px;
+      font-size: 1rem;
+      font-weight: 600;
+      border-radius: 5px;
+      cursor: pointer;
+      width: 100%;
+      transition: background 0.3s, transform 0.1s;
+  }
+
+  .submit-btn:hover {
+      background: #219ebc;
+  }
+
+  .submit-btn:active {
+      transform: scale(0.98);
+  }
+
+  /* Responsive Breakpoints */
+  @media (max-width: 768px) {
+      body {
+          padding: 10px;
+      }
+      .contact-info, 
+      .contact-form-wrapper {
+          padding: 30px 20px;
+      }
+      .contact-info h2 {
+          font-size: 1.6rem;
+      }
+      .contact-form-wrapper h3 {
+          font-size: 1.5rem;
+      }
+  }

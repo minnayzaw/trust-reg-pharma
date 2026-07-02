@@ -8,3 +8,86 @@
 @import "site-navbar";
 /* Blocks */
 @import "site-blocks";
+
+ /* Services Container */
+ .services-section {
+    padding: 60px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.services-header {
+    margin-bottom: 40px;
+}
+
+.services-header h2 {
+    font-size: 2.5rem;
+    color: #111;
+    margin-bottom: 10px;
+}
+
+.services-header p {
+    color: #666;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Flexbox Grid Wrapper */
+.services-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+/* Individual Service Card */
+.service-card {
+    background: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    flex: 1 1 calc(33.333% - 30px); /* 3 Columns on desktop */
+    min-width: 280px; /* Prevents cards from getting too squeezed */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+/* Card Elements */
+.service-icon {
+    font-size: 40px;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+
+.service-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #222;
+}
+
+.service-card p {
+    font-size: 0.95rem;
+    color: #555;
+}
+
+/* Media Queries for Responsive Adjustments */
+@media (max-width: 900px) {
+    .service-card {
+        flex: 1 1 calc(50% - 30px); /* 2 Columns on Tablets */
+    }
+}
+
+@media (max-width: 600px) {
+    .services-header h2 {
+        font-size: 2rem;
+    }
+    
+    .service-card {
+        flex: 1 1 100%; /* 1 Column on Mobile Phones */
+    }
+}
