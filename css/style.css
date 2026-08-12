@@ -1392,3 +1392,15 @@ a {
           font-size: 1.5rem;
       }
   }
+
+  .feature img{
+    width:30%;
+    margin-right: 2%;
+  }
+  .service-div{
+    width: 100%;
+    display: block;
+  }
+  .service-div img{
+    width: 50%;
+  }
